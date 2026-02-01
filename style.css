@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: midnightblue;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: purple;
+}
+
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: bisque;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: burlywood;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Skills Grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+}
+
+.job h3 {
+    margin: 0;
+    color: #3498db;
+}
+
+/* 1. Targeting the Professional Profile section */
+#summary h2 {
+    color: burlywood !important; /* Cyan heading */
+    border-bottom: 2px solid #00ffff;
+}
+
+#summary p {
+    color: yellow !important; /* Crisp white text */
+    font-weight: 400;
+}
+
+/* 2. Targeting the Education section */
+#education h2 {
+    color: burlywood !important; /* Cyan heading */
+    border-bottom: 2px solid #00ffff;
+}
+
+#education p, #education strong {
+    color: black !important; /* Crisp white text */
+}
+
+/* The Button Container */
+.email-button {
+    display: inline-block;
+    background-color: #3498db; /* Blue button */
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.email-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* The Scrambled Text inside */
+.scramble-email {
+    unicode-bidi: bidi-override;
+    direction: rtl; /* This flips "LIAME OT KCILC" back to "CLICK TO EMAIL" */
+    color: yellow !important; 
+    font-weight: bold;
+    font-family: sans-serif;
+}
